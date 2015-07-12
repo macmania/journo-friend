@@ -24,68 +24,60 @@
 
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                       this should be centered
+                    </div>
+                </div>
+                <ul class="nav nav-pills">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <h3 class="text-muted">my yo project</h3>
+                <h3 class="text-muted">Journalism Hackathon 7/12/15 Group 4's Project</h3>
             </div>
 
             <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Optional: Type in keywords separated by commas.</p>
-                <textarea>Current version of this app only allows for user to type in keywords.
-                Featuring coming in next version: This is text input; i.e., where the journalist types a brief abstract of the topic on which he or she plans to write an article. </textarea>
+                <h2>Journo Friend</h2>
+                <h4>Find what's already out there so you can make your stories fresh</h4>
 
-                <p class="lead">Optional:  Select filters</p>
-                <select class="form-control">
+                <p class="lead">Optional: Type in keywords about your topic separated by commas.</p>
+                <textarea style="margin: 0px; width: 330px; height: 70px;" >Current version of this app allows user to type in keywords separated by commas. In next version, user will be able to type whole sentences and phrases; i.e., a brief abstract of the topic on which he or she plans to write an article. </textarea>
 
-                        <select id="Popularity">
-                            <option selected='selected'>Popularity rating of article.</option>
+                <p class="lead">Optional:  Select a popularity level</p>
+                <div>
+                    <select class="form-control" id="Popularity">
+                            <option selected='selected'>Popularity rating of articles.</option>
                             <option id=Many> Many reader comments </option>
                             <option id=Some> Some reader comments </option>
                             <option id=Few> Few reader comments </option>
-                        </select>
-
-                    <select id="popularity">
-                        <option selected='selected'>Popularity rating of article.</option>
-                        <option id=Many> Many reader comments </option>
-                        <option id=Some> Some reader comments </option>
-                        <option id=Few> Few reader comments </option>
                     </select>
+                    <br/>
+                </div>
 
+                <p class="lead">Optional:  Select a date range</p>
+                <div class="date">
+                    <label>Enter a date before 1989-10-30:</label>
+                    <input type="date" name="myDate" max="1989-10-29"><br/>
 
-            </div>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
+                    <label>Enter a date after 2001-01-01:</label>
+                    <input type="date" name="myDate" min="2001-01-02">
+                    <br/>
+                </div>
 
                 <p><button class="btn btn-default" type="submit">Search</button>
                     <!--a class="btn btn-lg btn-success" href="#">Search<span class="glyphicon glyphicon-ok"></span></a--></p>
 
             </div>
 
+
             <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
 
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
-                </div>
             </div>
 
-            <div class="footer">
+            <!--div class="footer">
                 <p><span class="glyphicon glyphicon-heart">g heart</span> from the Yeoman team</p>
-            </div>
+            </div-->
 
         </div>
 
